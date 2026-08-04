@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratan Tour & Travel</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<script>
+    function toggleMenu() {
+        document.getElementById("navMenu").classList.toggle("active");
+    }
+    document.addEventListener("click", function (event) {
+        const menu = document.getElementById("navMenu");
+        const toggle = document.querySelector(".menu-toggle");
+        // If click is NOT inside menu AND NOT on toggle button
+        if (!menu.contains(event.target) && !toggle.contains(event.target)) {
+            menu.classList.remove("active");
+        }
+    });
+</script>
+<body>
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+    <div class="logo">Ratan Tour & Travel</div>
+    <div class="menu-toggle" onclick="toggleMenu(event)">☰</div>
+
+
+    <nav id="navMenu" class="nav-links">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/booking">Booking</a>
+        <a href="/contact">Contact</a>
+        <a href="tel:+919415787325" class="call-btn">📞 Call Now</a>
+    </nav>
+</header>
+
+<!-- ================= HERO SECTION ================= -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Your Trusted Travel Partner in Lucknow</h1>
+        <p>Comfortable cab service for local and outstation trips at best rates</p>
+
+        <div class="hero-buttons">
+            <a th:href="@{/booking}" class="btn-primary">Book Now →</a>
+            <a th:href="@{/contact}" class="btn-outline">Contact Us</a>
+        </div>
+    </div>
+</section>
+
+<!-- OUR SERVICES -->
+<section class="services-section">
+    <div class="section-header">
+        <h2>Our Services</h2>
+        <p>Comprehensive cab solutions for all your travel needs</p>
+    </div>
+
+    <div class="services-grid">
+
+        <div class="service-card">
+            <i class="fa fa-taxi service-icon"></i>
+            <h2>Local Cab Service</h2>
+            <p>Affordable cab service within Lucknow city for all your daily commute needs</p>
+        </div>
+
+        <div class="service-card">
+            <i class="fa fa-road service-icon"></i>
+            <h2>Outstation Trips</h2>
+            <p>Comfortable and safe long-distance travel from/to Lucknow to any destination</p>
+        </div>
+
+        <div class="service-card">
+            <i class="fa fa-plane service-icon"></i>
+            <h2>Airport Transfer</h2>
+            <p>Reliable and punctual airport pickup and drop services at competitive rates</p>
+        </div>
+
+        <div class="service-card">
+            <i class="fa fa-briefcase service-icon"></i>
+            <h2>Corporate Travel</h2>
+            <p>Professional cab services for business meetings, conferences, and corporate events</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- VEHICLE FLEET -->
+<section class="fleet-section">
+    <div class="section-header">
+        <h2>Our Vehicle Fleet</h2>
+        <p>Choose from our wide range of well-maintained vehicles</p>
+    </div>
+
+    <div class="fleet-grid">
+
+        <!-- CARD 1 -->
+        <div class="fleet-card">
+            <div class="fleet-img">
+                <img src="images/sedan1.jpeg" alt="Luxury Sedan">
+                <span class="seat-tag">5-Seater</span>
+            </div>
+            <div class="fleet-content">
+                <h3>Sedan</h3>
+                <p>Perfect for business trips and airport transfers</p>
+                <ul>
+                    <li>AC</li>
+                    <li>Comfortable Seating</li>
+                    <li>Professional Driver</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="fleet-card">
+            <div class="fleet-img">
+                <img src="images/premium-sedan.jpeg" alt="Premium Sedan">
+                <span class="seat-tag">5-Seater</span>
+            </div>
+            <div class="fleet-content">
+                <h3>Luxury</h3>
+                <p>Comfortable rides for city and outstation travel</p>
+                <ul>
+                    <li>AC</li>
+                    <li>Luxury Interior</li>
+                    <li>Comfortable Seating</li>
+                    <li>Professional Driver</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="fleet-card">
+            <div class="fleet-img">
+                <img src="images/mpv.jpeg" alt="Luxury SUV">
+                <span class="seat-tag">7-Seater</span>
+            </div>
+            <div class="fleet-content">
+                <h3> MPV</h3>
+                <p>Spacious MPV for family trips</p>
+                <ul>
+                    <li>AC</li>
+                    <li>Extra Legroom</li>
+                    <li>Professional Driver</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="fleet-card">
+            <div class="fleet-img">
+                <img src="images/premium-mpv.jpg" alt="Premium SUV">
+                <span class="seat-tag">7-Seater</span>
+            </div>
+            <div class="fleet-content">
+                <h3>Premium MPV</h3>
+                <p>Ideal for comfortable long-distance journeys</p>
+                <ul>
+                    <li>AC</li>
+                    <li>Extra Legroom</li>
+                    <li>Comfortable Seating</li>
+                    <li>Professional Driver</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="fleet-card">
+            <div class="fleet-img">
+                <img src="images/luxury-suv.jpg" alt="Premium SUV">
+                <span class="seat-tag">7-Seater</span>
+            </div>
+            <div class="fleet-content">
+                <h3>Luxury SUV</h3>
+                <p>Ideal for comfortable long-distance journeys</p>
+                <ul>
+                    <li>AC</li>
+                    <li>Extra Legroom</li>
+                    <li>Luxury Interior</li>
+                    <li>Comfortable Seating</li>
+                    <li>Professional Driver</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="fleet-card">
+            <div class="fleet-img">
+                <img src="images/tempo.jpg" alt="Tempo Traveller">
+                <span class="seat-tag">13-Seater, 17-Seater</span>
+            </div>
+            <div class="fleet-content">
+                <h3>Tempo Traveller</h3>
+                <p>Perfect for group tours and family gatherings</p>
+                <ul>
+                    <li>AC</li>
+                    <li>Push Back Seats</li>
+                    <li>Professional Driver</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- TESTIMONIAL SECTION -->
+<section class="testimonial-section">
+    <div class="section-header">
+        <h2>What Our Customers Say</h2>
+        <p>Real experiences from satisfied travelers</p>
+    </div>
+
+    <div class="testimonial-grid">
+
+        <!-- CARD 1 -->
+        <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="review">
+                "Excellent service! The driver was professional and the car was very clean.
+                Highly recommend for outstation trips."
+            </p>
+            <h4>Mr. Rajesh Kumar</h4>
+            <span>Lucknow</span>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="review">
+                "Best cab service in Lucknow. Punctual, safe, and affordable.
+                Used their service for airport transfer."
+            </p>
+            <h4>Mrs. Priya Sharma</h4>
+            <span>Delhi</span>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="review">
+                "Very satisfied with the tempo traveller service for our family trip.
+                Comfortable and spacious."
+            </p>
+            <h4>Mr. Amit Singh</h4>
+            <span>Varanasi</span>
+        </div>
+
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="cta-container">
+        <h2>Ready to Start Your Journey?</h2>
+        <p>Book your cab now and enjoy a comfortable ride</p>
+        <a th:href="@{/booking}" class="cta-btn">
+            Book Your Ride Now
+            <span>&#8594;</span>
+        </a>
+    </div>
+</section>
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h2>Ratan Tour & Travel</h2>
+            <p>Your trusted partner for comfortable and reliable cab services in Lucknow. We provide local and outstation travel at the best rates.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a th:href="@{/}">Home</a></li>
+                <li><a th:href="@{/about}">About</a></li>
+                <li><a th:href="@{/booking}">Booking</a></li>
+                <li><a th:href="@{/contact}">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Our Services</h4>
+            <ul>
+                <li><a th:href="@{/booking}">Local Cab Service</a></li>
+                <li><a th:href="@{/booking}">Outstation Trips</a></li>
+                <li><a th:href="@{/contact}">Airport Transfer</a></li>
+                <li><a th:href="@{/contact}">Corporate Travel</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Contact Us</h4>
+            <div class="contact-info">
+                <p><span>📞</span> +91 9415787325, 9415577023</p>
+                <p><span>✉️</span> ratantourandtravel@gmail.com</p>
+                <p><span>📍</span> Hazratganj, Lucknow, UP</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/ratantourandtravel?igsh=MWZueWx2NmxpZHE5Ng==" class="fa fa-instagram">            Ratan Tour & Travel</a>
+                <a href="#" class="icon"></a>
+                <a href="#" class="icon"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <hr>
+        <p>&copy; 2024 Ratan Tour & Travel. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>

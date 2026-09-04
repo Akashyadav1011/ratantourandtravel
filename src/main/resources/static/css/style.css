@@ -1051,3 +1051,6 @@ input, select, textarea {
     margin-top: 12px;
     font-weight: 600;
 }
+.contact-email {
+    white-space: nowrap;
+}

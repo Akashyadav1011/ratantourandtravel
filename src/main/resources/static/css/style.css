@@ -28,15 +28,17 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 8%;
+    padding: 6px 4%;
     position: relative;
     width: 100%;
     top: 0;
     left: 0;
-    background: rgba(255, 255, 255, 0.6);  /* 0.6 = slight transparent */
-    backdrop-filter: blur(10px);          /* Glass effect */
-
+    background: rgba(190, 225, 238, 0.88);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 2px 12px rgba(0, 80, 120, 0.15);
     z-index: 1000;
+    margin-bottom: 0;
 }
 
 .logo {
@@ -442,7 +444,7 @@ section {
 /* ================= ABOUT ================= */
 
 .about-hero {
-    margin-top: 80px;
+    margin-top: 0px;
     min-height: 40vh;
     background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
     url('/images/about-banner.jpg') center/cover no-repeat;
@@ -1053,4 +1055,22 @@ input, select, textarea {
 }
 .contact-email {
     white-space: nowrap;
+}
+.navbar-brand {
+    display: flex;
+    align-items: Center;
+    gap: 7px;
+    text-decoration: none;
+}
+
+.navbar-logo {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.navbar-brand span {
+    font-size: 22px;
+    font-weight: 600;
+    color: #54209b
 }

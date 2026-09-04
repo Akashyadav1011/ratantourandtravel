@@ -36,6 +36,9 @@ public class ContactService {
         }
     }
 
-    public void saveMessage(String name, String email, String phone, String subject, String message) {
+    public void saveMessage(String name, String email, String phone,
+                            String subject, String message) {
+
+        saveContact(name, email, phone, subject, message);
     }
 }

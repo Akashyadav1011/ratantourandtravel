@@ -65,10 +65,10 @@
             <label>Email Address</label>
             <input type="email" name="email" placeholder="your.email@example.com">
 
-            <label>Trip Type *</label>
+            <label>Trip Type * </label>
             <div class="radio-group">
-                <label><input type="radio" name="tripType" value="Outstation" required> Outstation Trip</label>
-                <label><input type="radio" name="tripType" value="Local" required>      Local</label>
+                <label><input type="radio" name="tripType" value="Outstation" required>Outstation Trip</label>
+                <label><input type="radio" name="tripType" value="Local" required>Local</label>
             </div>
             <div class="form-row">
                 <div>
@@ -84,7 +84,7 @@
             <div class="form-row">
                 <div>
                     <label>Travel Date *</label>
-                    < <label>
+                    <label>
                     <input type="date" name="travelDate" th:attr="min=${#dates.format(#dates.createNow(), 'yyyy-MM-dd')}" required>
                 </label>
                 </div>
@@ -99,10 +99,13 @@
                     <label>Vehicle Type *</label>
                     <select name="vehicleType" required>
                         <option value="">Select Vehicle Type</option>
-                        <option value="Sedan">Sedan</option>
-                        <option value="Premium Sedan">Premium Sedan</option>
-                        <option value="SUV">SUV</option>
-                        <option value="Premium SUV">Premium SUV</option>
+                        <option value="Sedan">Dzire/Sedan</option>
+                        <option value="Premium Sedan">Honda City / Premium Sedan</option>
+                        <option value="Mid">Eartiga</option>
+                        <option value="SUV">Carens</option>
+                        <option value="Premium MPV">Innova Crysta</option>
+                        <option value="luxury">Audi/Bmw/Mercedes</option>
+                        <option value="Traveller">13/17/26 Seater Traveller</option>
                     </select>
                 </div>
                 <div>
@@ -189,9 +192,10 @@
         <div class="footer-col">
             <h4>Contact Us</h4>
             <div class="contact-info">
-                <p><span>📞</span> +91 9415787325, 9415577023</p>
+                <p><span>📞</span> +919415787325,9415577023</p>
                 <p><span>✉️</span> ratantourandtravel@gmail.com</p>
-                <p><span>📍</span> Hazratganj, Lucknow, UP</p>
+                <a href="https://www.google.com/maps/place/RATAN+TOUR+AND+TRAVEL/@26.8097398,80.878061,11z/data=!4m10!1m2!2m1!1sratan+tour+and+travel+lucknow!3m6!1s0x399bffc5c43cb735:0x71ae522293c2b5bd!8m2!3d26.8097398!4d80.878061!15sCh1yYXRhbiB0b3VyIGFuZCB0cmF2ZWwgbHVja25vd1ofIh1yYXRhbiB0b3VyIGFuZCB0cmF2ZWwgbHVja25vd5IBEWNhcl9yZW50YWxfYWdlbmN54AEA!16s%2Fg%2F11yjbc78gk!5m1!1e4?entry=ttu&g_ep=EgoyMDI2MDkwMS4wIKXMDSoASAFQAw%3D%3D"_blank"
+                   rel="noopener noreferrer"> 📍 Find Us on Google Maps</a>
             </div>
             <div class="social-icons">
                 <a href="https://www.instagram.com/ratantourandtravel?igsh=MWZueWx2NmxpZHE5Ng==" class="fa fa-instagram"> Ratan Tour & Travel</a>

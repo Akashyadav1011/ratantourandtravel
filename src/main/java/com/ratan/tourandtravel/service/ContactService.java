@@ -17,7 +17,6 @@ public class ContactService {
                             String subject, String message) {
 
         String sql = "INSERT INTO contact_messages(name, email, phone, subject, message) VALUES (?, ?, ?, ?, ?)";
-
         // ✅ Step 1: Save to DB
         jdbcTemplate.update(sql, name, email, phone, subject, message);
 

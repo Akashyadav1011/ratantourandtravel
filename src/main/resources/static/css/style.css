@@ -1023,22 +1023,17 @@ input, select, textarea {
         font-size: 14px;
     }
 }
-
 /* Small Devices (320px) */
 @media (max-width: 480px) {
-
     .contact-hero h1 {
         font-size: 24px;
     }
-
     .info-card {
         padding: 18px;
     }
-
     .contact-right {
         padding: 20px;
     }
-
     .send-btn {
         font-size: 14px;
         padding: 12px;
@@ -1061,13 +1056,11 @@ input, select, textarea {
     gap: 7px;
     text-decoration: none;
 }
-
 .navbar-logo {
     width: 48px;
     height: 48px;
     object-fit: contain;
 }
-
 .navbar-brand span {
     font-size: 22px;
     font-weight: 600;

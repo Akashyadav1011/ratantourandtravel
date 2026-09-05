@@ -33,7 +33,7 @@ section {
     width: 100%;
     top: 0;
     left: 0;
-    background: rgba(190, 225, 238, 0.88);
+    background: rgba(190, 225, 232, 0.88);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 2px 12px rgba(0, 80, 120, 0.15);
@@ -1057,8 +1057,8 @@ input, select, textarea {
     text-decoration: none;
 }
 .navbar-logo {
-    width: 48px;
-    height: 48px;
+    width: 49px;
+    height: 49px;
     object-fit: contain;
 }
 .navbar-brand span {
